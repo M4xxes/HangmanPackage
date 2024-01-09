@@ -8,7 +8,7 @@ import (
 	"os"
 )
 
-func Openfile(mot string) string {
+func Openfile() (mot string) {
 
 	if len(os.Args) < 2 {
 		fmt.Println("Select a words file")
