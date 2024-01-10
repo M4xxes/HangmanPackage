@@ -2,18 +2,12 @@ package hangmanpackage
 
 import (
 	"bufio"
-	"fmt"
 	"log"
 	"math/rand"
 	"os"
 )
 
-func Openfile() (mot string) {
-
-	if len(os.Args) < 2 {
-		fmt.Println("Select a words file")
-		os.Exit(1)
-	}
+func Openfile(mot string) string {
 
 	f, err := os.Open(os.Args[1])
 
